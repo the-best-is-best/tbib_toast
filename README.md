@@ -1,14 +1,29 @@
-# tbib_toast
+# Toast
 
-A new Flutter package project.
+A Flutter Toast plugin.
 
-## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+```dart
+Toast.show("Toast plugin app", context, duration: Toast.LENGTH_SHORT, gravity:  Toast.BOTTOM);
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+property | description
+--------|------------
+msg | String (Not Null)(required)
+context | BuildContext (Not Null)(required)
+duration| Toast.LENGTH_SHORT or Toast.LENGTH_LONG (optional)
+gravity | Toast.TOP (or) Toast.CENTER (or) Toast.BOTTOM
+textStyle | TextStyle (default fontSize:15, color: Colors.white)
+backgroundColor | Color (default Color(0xAA000000))
+backgroundRadius | double ï¼ˆdefault 16)
+border| Border (optional)
+
+
+![toast](https://github.com/huclengyue/FlutterToast/blob/master/screenshot/141107.png)
+![toast](https://github.com/huclengyue/FlutterToast/blob/master/screenshot/141134.png)
+
+
+## License
+
+    MIT License
+

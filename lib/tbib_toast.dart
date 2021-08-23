@@ -1,4 +1,4 @@
-library tbib_TBIBToast;
+library tbib_toast;
 
 import 'dart:ui';
 
